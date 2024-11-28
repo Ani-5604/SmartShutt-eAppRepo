@@ -15,7 +15,7 @@ const port = process.env.PORT || 8070;  // Use environment PORT if available, el
 
 // Middleware
 app.use(cors({
-  origin: "http://localhost:3000",  // Allow frontend on localhost:3000
+  origin: "https://prismatic-khapse-99f873.netlify.app/",  // Allow frontend on localhost:3000
   methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Specify allowed methods
 }));
 app.use(express.json());  // Use built-in express middleware to parse JSON requests
